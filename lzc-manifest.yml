@@ -1,0 +1,12 @@
+lzc-sdk-version: 0.1
+name: model viewer
+package: cloud.lazycat.app.model-viewer
+version: 0.0.1
+description: 
+license: https://choosealicense.com/licenses/mit/
+homepage: 
+author: Karasu Shin
+application:
+  subdomain: model-viewer
+  routes:
+    - /=file:///lzcapp/pkg/content
