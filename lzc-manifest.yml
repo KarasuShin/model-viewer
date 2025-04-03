@@ -5,8 +5,18 @@ version: 0.0.1
 description: 
 license: https://choosealicense.com/licenses/mit/
 homepage: 
-author: Karasu Shin
+author: Karasu
 application:
   subdomain: model-viewer
   routes:
     - /=file:///lzcapp/pkg/content
+  file_handler:
+    mime:
+      - application/octet-stream
+      - application/zip
+      - image/x-3ds
+      - model/gltf-binary
+      - model/vnd.collada+xml
+      - text/plain
+    actions:
+      open: /?file=%u
